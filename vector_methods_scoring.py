@@ -23,7 +23,7 @@ if textstring:
 
   # Example usage
   count = word_count(textstring)
-  print(count)
+  st.write(count)
 
   
   st.subheader('Readability: (Flesch Reading Ease Score)')

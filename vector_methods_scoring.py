@@ -17,6 +17,14 @@ if textstring:
   st.subheader('Language Detected:')
   
   st.subheader('Word Count:')
+  def word_count(text):
+    words = text.split()
+    return len(words)
+
+  # Example usage
+  count = word_count(textstring)
+  print(count)
+
   
   st.subheader('Readability: (Flesch Reading Ease Score)')
   ease = textstat.flesch_reading_ease(textstring)

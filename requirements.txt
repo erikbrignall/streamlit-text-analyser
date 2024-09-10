@@ -2,3 +2,4 @@ pandas
 streamlit
 textstat
 language_tool_python
+langdetect

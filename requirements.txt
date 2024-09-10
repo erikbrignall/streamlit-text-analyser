@@ -1,4 +1,4 @@
 pandas
 streamlit
-lingua
+lingua==2.0.2
 textstat

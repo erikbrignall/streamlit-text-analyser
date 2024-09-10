@@ -23,7 +23,7 @@ if textstring:
   try:
         language = detect(textstring)
         st.write(f"Detected language: {language}")
-    except LangDetectException:
+  except LangDetectException:
         st.write("Could not detect the language. Please enter more text.")
   
   st.subheader('Word Count:')

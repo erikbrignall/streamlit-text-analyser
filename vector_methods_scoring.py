@@ -3,23 +3,7 @@
 import pandas as pd
 import streamlit as st
 # LANGUAGE DETECTION
-#from lingua import LanguageDetectorBuilder
-#from lingua import Language, LanguageDetectorBuilder
-# reading ease score
 import textstat
-
-#@st.cache
-#def load_detector():
-#    return LanguageDetectorBuilder.from_all_languages().build()
-
-#detector = load_detector()
-
-#st.title("Language Detection App")
-
-#text = st.text_area("Enter text to detect language:")
-#if text:
-#    result = detector.detect_language_of(text)
-#    st.write(f"Detected language: {result}")
 
 st.set_page_config(page_title='Text Assessment Estimation - DEMO')
 

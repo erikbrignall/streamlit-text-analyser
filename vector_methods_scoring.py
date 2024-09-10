@@ -16,5 +16,6 @@ st.subheader('Language Detected:')
 st.subheader('Word Count:')
 
 st.subheader('Readability: (Flesch Reading Ease Score)')
-
+ease = textstat.flesch_reading_ease(textstring)
+st.write(ease)
 st.subheader('Grammar errors:')

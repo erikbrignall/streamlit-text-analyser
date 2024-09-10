@@ -10,7 +10,7 @@ st.set_page_config(page_title='Text Assessment Estimation - DEMO')
 
 st.title('Methods Assessment - VECTOR DEMO')
 st.write('The following is a demo for text quality scoring.')
-textstring = st.text_input('Methods text')
+textstring = st.text_area('Methods text')
 
 if textstring:
 

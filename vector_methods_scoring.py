@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 # LANGUAGE DETECTION
 import textstat
+import language_tool_python
 
 st.set_page_config(page_title='Text Assessment Estimation - DEMO')
 
@@ -21,3 +22,8 @@ if textstring:
   ease = textstat.flesch_reading_ease(textstring)
   st.write(ease)
   st.subheader('Grammar errors:')
+  tool = language_tool_python.LanguageToolPublicAPI('en')
+
+  matches = tool.check(textstring)
+  st.write(len(matches))
+  st.write(matches)

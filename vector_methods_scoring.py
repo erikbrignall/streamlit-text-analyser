@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 # LANGUAGE DETECTION
-from lingua.builder import LanguageDetectorBuilder
+from lingua import LanguageDetectorBuilder
 #from lingua import Language, LanguageDetectorBuilder
 # reading ease score
 import textstat

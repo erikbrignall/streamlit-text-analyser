@@ -5,6 +5,8 @@ import streamlit as st
 # LANGUAGE DETECTION
 import textstat
 import language_tool_python
+from langdetect import detect, DetectorFactory
+from langdetect.lang_detect_exception import LangDetectException
 
 st.set_page_config(page_title='Text Assessment Estimation - DEMO')
 
@@ -15,6 +17,14 @@ textstring = st.text_area('Methods text')
 if textstring:
 
   st.subheader('Language Detected:')
+  # Ensure consistent results
+  DetectorFactory.seed = 0
+
+  try:
+        language = detect(textstring)
+        st.write(f"Detected language: {language}")
+    except LangDetectException:
+        st.write("Could not detect the language. Please enter more text.")
   
   st.subheader('Word Count:')
   def word_count(text):
